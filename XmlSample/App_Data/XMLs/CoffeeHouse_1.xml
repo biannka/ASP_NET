@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CoffeeHouse SYSTEM "file:/C:/Users/Bibi/Desktop/XML/final/CoffeeHouse.dtd">
+<CoffeeHouse id="1" >
+    <name>Всичко За Кафето</name>
+    <working_time>От 06.00 до 20.00. Всеки ден</working_time>
+    <products>
+        <product id="К01">
+            <price>2.00 лева</price>
+            <product_name>Класическо кафе</product_name>
+            <description>
+                Една от най-разпространените форми, под които пием любимото ни кафеено удоволствие е еспресото. 
+                Създаването на чаша еспресо е процес, който изисква старание и внимание към детайла. Най-често разпространеният вид кафе, подходящ за еспресо е сорт Робуста.
+                Той е с по-високо съдържание на кофеин и е по-евтин в сравнение с Арабиката, заради което се използва и в повечето търговски марки кафе. 
+                Робустата оформя плътният каймак на еспресото и е по-малко чувствителна към температурата. 
+                Истината е, че еспресото направено от смес 100% зърна Арабика обаче се смята за по-качествено, тъй като вкусът му е по-фин и по-ароматен.
+            </description>
+            <coffee id="К12" drink_type = "Гореща">
+                <coffee_name>Късо кафе</coffee_name>
+                <coffee_type>Еспресо</coffee_type>
+            </coffee>
+            <coffee id="К11" drink_type = "Гореща">
+                <coffee_name>Дълго кафе</coffee_name>
+                <coffee_type>Еспресо</coffee_type>
+            </coffee>
+            <image>кафе.jpg</image>
+        </product> 
+    </products>
+</CoffeeHouse>

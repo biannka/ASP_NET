@@ -1,0 +1,91 @@
+﻿<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="10">
+  <name>Свежо Утро</name>
+  <working_time>от 8 до 22</working_time>
+  <products>
+    <product id="П100">
+      <price>2лв</price>
+      <product_name>Класическа Закуска</product_name>
+      <coffee id="К101" supplement_type="Захар" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Еспресо</coffee_type>
+        <supplement_price>0.5лв.</supplement_price>
+      </coffee>
+      <food id="Х102" food_type="Солено">
+        <food_name>Сандвич</food_name>
+      </food>
+    </product>
+    <product id="П101">
+      <price>3лв</price>
+      <product_name>Сладка Закуска</product_name>
+      <coffee id="К1010" supplement_type="Захар" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Еспресо</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+      <food id="Х1010" food_type="Сладко">
+        <food_name>Кексче</food_name>
+      </food>
+    </product>
+    <product id="П102">
+      <price>4лв</price>
+      <product_name>Свежа Закуска</product_name>
+      <coffee id="К1020" supplement_type="Захар" drink_type="Студена">
+        <coffee_name>Фрапе</coffee_name>
+        <coffee_type>Нескафе</coffee_type>
+        <supplement_price>0.5лв.</supplement_price>
+      </coffee>
+      <food id="Х1020" food_type="Сладко">
+        <food_name>Сладолед и плодове</food_name>
+      </food>
+    </product>
+    <product id="П103">
+      <price>5лв</price>
+      <product_name>Здравословна Закуска</product_name>
+      <coffee id="П1030" supplement_type="Мляко" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Зелен Рдесн</coffee_type>
+        <supplement_price>0.5лв</supplement_price>
+      </coffee>
+      <food id="Х1030" food_type="Сладко">
+        <food_name>Зърнена закуска с плодове</food_name>
+      </food>
+    </product>
+  </products>
+  <gift id="Г10" gift_type = "Ваучер" gift_reason = "Покупка" >
+    <gift_name>Благодарим!</gift_name>
+  </gift>
+  <contacts id="С10">
+    <location id="Л10">
+      <country>България</country>
+      <city>Бургас</city>
+      <street>Сезам</street>
+      <building_number>5789</building_number>
+    </location>
+    <phone>08765432</phone>
+    <website>Свежо-Утро.кафе</website>
+    <e-mail>Свежо@Утро</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E100" position="Продавач" sex="Мъж">
+      <emp_name>Валери</emp_name>
+      <salary>700</salary>
+      <age>80</age>
+    </employee>
+    <employee id="E101" position="Готвач" sex="Мъж">
+      <emp_name>Гошо</emp_name>
+      <salary>600</salary>
+      <age>45</age>
+    </employee>
+    <employee id="E102" position="Управител" sex="Жена">
+      <emp_name>Миленка</emp_name>
+      <salary>1200</salary>
+      <age>54</age>
+    </employee>
+    <employee id="E103" position="Чистач" sex="Жена">
+      <emp_name>Глория</emp_name>
+      <salary>1650</salary>
+      <age>45</age>
+    </employee>
+  </employees>
+</CoffeeHouse>

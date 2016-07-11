@@ -1,0 +1,73 @@
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="6">
+    <name>Тракйската принцеса</name>
+    <working_time>от 7:00 - до 6:00</working_time>
+    <products>
+        <product id="п61">
+            <price>5.50лв.</price>
+            <product_name>Палачинки</product_name>
+            <description>
+			Че палачинките са любима закуска на малки и големи няма никакъв спор. 
+                    Сигурно на пръсти се броят хората, които не ги обичат.
+                    Със сиренце, сладко, конфитюр, шоколад, кашкавал или каквото там обичате,
+                    те са вкусни, мекички, наслада за небцето и сетивата.
+			</description>
+            <food id="X610" food_type="Солено">
+              <food_name>Палачинки с плодове</food_name>
+            </food>
+            <food id="X611" food_type="Солено">
+              <food_name>Палачинки със сирене</food_name>
+            </food>
+			<food id="X612" food_type="Солено">
+              <food_name>Палачинки с шунка и кашкавал</food_name>
+            </food>
+			<food id="X614" food_type="Солено">
+              <food_name>Палачинки с шунка и топено сирене</food_name>
+            </food>
+            <food id="X615" food_type="Солено">
+              <food_name>Палачинки с шоколад</food_name>
+            </food>
+            <food id="X616" food_type="Солено">
+              <food_name>Палачинки със сладко</food_name>
+            </food>
+        </product>
+        <product id="п611">
+            <price>2лв</price>
+            <product_name>кафе</product_name>
+            <description>най-яките кафета! Традиционни</description>
+            <coffee id="к6110" >
+                <coffee_name>Lavazza</coffee_name>
+                <coffee_type>Горещо</coffee_type>
+                <supplement_price>0.10лв</supplement_price>
+            </coffee>
+            <coffee id="к6111"  supplement_type="Сметана" drink_type="Гореща">
+                <coffee_name>Cararro</coffee_name>
+                <coffee_type>Горещо</coffee_type>
+                <supplement_price>0.40лв</supplement_price>
+            </coffee>
+        </product>
+    </products>
+    <contacts id="С6">
+        <location id="Л6">
+            <country>България</country>
+            <city>София</city>
+            <street>Граф Игнатиев</street>
+            <building_number>7640</building_number>
+        </location>
+        <phone>0887347690</phone>
+        <website>ТракйскатаПринцеса.бг</website>
+        <e-mail>ТракйскатаПринцеса@кафе.ком</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е60" position="Продавач" sex="Мъж">
+            <emp_name>Симона</emp_name>
+            <salary>980</salary>
+            <age>23</age>
+        </employee>
+        <employee id="Е61" position="Продавач" sex="Мъж">
+            <emp_name>Кайла-Боро</emp_name>
+            <salary>943</salary>
+            <age>67</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

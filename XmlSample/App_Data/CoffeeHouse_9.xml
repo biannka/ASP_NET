@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="9">
+    <name>Ред кафе</name>
+    <working_time>от 7:00 - до 20:00</working_time>
+    <products>
+        <product id="п90">
+            <price>2.50лв</price>
+            <product_name>бисквити</product_name>
+            <description>най-яките бисквити!</description>
+            <food id="Ф900" food_type="Солено">
+              <food_name>биквити с шоколад</food_name>
+            </food>
+            <food id="Ф91" food_type="Солено">
+              <food_name>биквити с бял шоколад</food_name>
+            </food>
+            <food id="Ф902" food_type="Солено">
+              <food_name>пълнозърнести бисквити</food_name>
+            </food>
+        </product>
+        <product id="п91">
+            <price>2лв</price>
+            <product_name>кафе</product_name>
+            <description>най-яките кафета! Традиционни</description>
+            <coffee id="к910"  supplement_type="Захар" drink_type="Гореща">
+              <coffee_name>Lavazza</coffee_name>
+                <coffee_type>Горещо</coffee_type>
+                <supplement_price>0.5лв</supplement_price>
+            </coffee>
+            <coffee id="к912"  supplement_type="Захар" drink_type="Гореща">
+              <coffee_name>Cararro</coffee_name>
+                <coffee_type>Горещо</coffee_type>
+                <supplement_price>0.5лв</supplement_price>
+            </coffee>
+        </product>
+    </products>
+    <contacts id="С9">
+        <location id="Л9">
+            <country>България</country>
+            <city>София</city>
+            <street>Атанас Далчев</street>
+            <building_number>ГР76</building_number>
+        </location>
+        <phone>0887347690</phone>
+        <website>Редкафе.бг</website>
+        <e-mail>Редкафе@кафе.ком</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е90" position="Продавач" sex="Мъж">
+            <emp_name>Лейла</emp_name>
+            <salary>900</salary>
+            <age>23</age>
+        </employee>
+        <employee id="Е91" position="Продавач" sex="Мъж">
+            <emp_name>Кайла</emp_name>
+            <salary>900</salary>
+            <age>67</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

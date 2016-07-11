@@ -1,0 +1,46 @@
+<!ELEMENT CoffeeHouse (name, working_time, products,gift?, contacts, employees)>
+    <!ATTLIST CoffeeHouse id CDATA #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT working_time (#PCDATA) >
+    <!ELEMENT products (product)+>
+    <!ELEMENT product (price,product_name, description?, coffee*, food*, image*)>
+        <!ATTLIST product id ID #REQUIRED>
+        <!ELEMENT image (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT product_name (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT coffee (coffee_name , coffee_type, supplement_price?)>
+            <!ATTLIST coffee id ID #REQUIRED>
+            <!ATTLIST coffee drink_type (Гореща|Студена) 'Гореща' >
+            <!ELEMENT coffee_type (#PCDATA) >
+            <!ELEMENT coffee_name (#PCDATA) >
+            <!ELEMENT supplement_price (#PCDATA)>
+            <!ATTLIST coffee supplement_type (Захар|Канела|Мляко|Сметана|Без) 'Без'>
+        <!ELEMENT food (food_name)>
+            <!ATTLIST food id ID #REQUIRED>
+            <!ATTLIST food food_type (Солено|Сладко) #REQUIRED>
+            <!ELEMENT food_name (#PCDATA)>
+    <!ELEMENT gift (gift_name)>
+        <!ATTLIST gift id ID #REQUIRED>
+        <!ELEMENT gift_name (#PCDATA) >
+        <!ATTLIST gift gift_type (Храна|Кафе|Отстъпка|Ваучер) #REQUIRED>
+        <!ATTLIST gift gift_reason (Редовен|Покупка) #REQUIRED>
+    <!ELEMENT contacts (location, phone, website, e-mail)>
+        <!ATTLIST contacts id ID #REQUIRED>
+        <!ELEMENT phone (#PCDATA) >
+        <!ELEMENT e-mail (#PCDATA) >
+        <!ELEMENT website (#PCDATA) >
+        <!ELEMENT location (country?, city ,street?, building_number)>
+            <!ATTLIST location id ID #REQUIRED>
+            <!ELEMENT country (#PCDATA) >
+            <!ELEMENT city (#PCDATA) >
+            <!ELEMENT street (#PCDATA) >
+            <!ELEMENT building_number (#PCDATA) >
+    <!ELEMENT employees (employee)+>
+        <!ELEMENT employee (emp_name, salary, age?)>
+        <!ATTLIST employee id ID #REQUIRED >
+        <!ATTLIST employee position (Продавач | Готвач | Чистач |  Управител) #REQUIRED>
+        <!ATTLIST employee sex (Мъж| Жена) #REQUIRED>
+        <!ELEMENT emp_name (#PCDATA) >
+        <!ELEMENT salary (#PCDATA) >
+        <!ELEMENT age (#PCDATA) >

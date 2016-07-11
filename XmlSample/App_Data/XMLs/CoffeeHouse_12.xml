@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="12">
+  <name>Сири</name>
+  <working_time>от 6 до 20</working_time>
+  <products>
+    <product id="П120">
+      <price>4</price>
+      <product_name>Кафета</product_name>
+      <coffee id="К120" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Късо кафе</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="К121" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Безкофеиново</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="К122" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="К123" supplement_type="Мляко" drink_type="Студена">
+        <coffee_name>Лате макиато малина</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0.5</supplement_price>
+      </coffee>
+      <coffee id="К124" supplement_type="Мляко" drink_type="Студена">
+        <coffee_name>Лате макиато праскова</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0.5</supplement_price>
+      </coffee>
+      <coffee id="К125" supplement_type="Мляко" drink_type="Студена">
+        <coffee_name>Лате макиато ягода</coffee_name>
+        <coffee_type>Сири</coffee_type>
+        <supplement_price>0.5</supplement_price>
+      </coffee>
+    </product>
+  </products>
+  <contacts id="L12">
+    <location id="C12">
+      <country>България</country>
+      <city>Враца</city>
+      <building_number>5342</building_number>
+    </location>
+    <phone>08765432</phone>
+    <website>Сири.ком</website>
+    <e-mail>Сири@кафе</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E120" position="Продавач" sex="Мъж">
+      <emp_name>Констатин</emp_name>
+      <salary>800</salary>
+      <age>30</age>
+    </employee>
+    <employee id="E121" position="Продавач" sex="Мъж">
+      <emp_name>Илиян</emp_name>
+      <salary>800</salary>
+      <age>34</age>
+    </employee>
+    <employee id="E122" position="Управител" sex="Жена">
+      <emp_name>Александра</emp_name>
+      <salary>1000</salary>
+      <age>34</age>
+    </employee>
+  </employees>
+</CoffeeHouse>

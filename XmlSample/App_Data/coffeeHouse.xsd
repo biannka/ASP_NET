@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="CoffeeHouse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="working_time"/>
+        <xs:element ref="products"/>
+        <xs:element minOccurs="0" ref="gift"/>
+        <xs:element ref="contacts"/>
+        <xs:element ref="employees"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.CoffeeHouse"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.CoffeeHouse">
+    <xs:attribute name="id" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="working_time" type="xs:string"/>
+  <xs:element name="products">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="product"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="price"/>
+        <xs:element ref="product_name"/>
+        <xs:element minOccurs="0" ref="description"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="coffee"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="food"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="image"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.product"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.product">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:attributeGroup>
+  <xs:element name="image" type="xs:string"/>
+  <xs:element name="price" type="xs:string"/>
+  <xs:element name="product_name" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="coffee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coffee_name"/>
+        <xs:element ref="coffee_type"/>
+        <xs:element minOccurs="0" ref="supplement_price"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.coffee"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.coffee">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute name="drink_type" default="Гореща">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Гореща"/>
+          <xs:enumeration value="Студена"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="supplement_type" default="Без">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Захар"/>
+          <xs:enumeration value="Канела"/>
+          <xs:enumeration value="Мляко"/>
+          <xs:enumeration value="Сметана"/>
+          <xs:enumeration value="Без"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="coffee_type" type="xs:string"/>
+  <xs:element name="coffee_name" type="xs:string"/>
+  <xs:element name="supplement_price" type="xs:string"/>
+  <xs:element name="food">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="food_name">
+          <xs:attributeGroup ref="attlist.food"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.food">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute name="food_type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Солено"/>
+          <xs:enumeration value="Сладко"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:complexType name="food_name">
+    <xs:sequence>
+      <xs:element ref="food_name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="food_name" type="xs:string"/>
+  <xs:element name="gift">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="gift_name">
+          <xs:attributeGroup ref="attlist.gift"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.gift">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute name="gift_type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Храна"/>
+          <xs:enumeration value="Кафе"/>
+          <xs:enumeration value="Отстъпка"/>
+          <xs:enumeration value="Ваучер"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="gift_reason" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Редовен"/>
+          <xs:enumeration value="Покупка"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:complexType name="gift_name">
+    <xs:sequence>
+      <xs:element ref="gift_name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="gift_name" type="xs:string"/>
+  <xs:element name="contacts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="location"/>
+        <xs:element ref="phone"/>
+        <xs:element ref="website"/>
+        <xs:element ref="e-mail"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.contacts"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.contacts">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:attributeGroup>
+  <xs:element name="phone" type="xs:string"/>
+  <xs:element name="e-mail" type="xs:string"/>
+  <xs:element name="website" type="xs:string"/>
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="country"/>
+        <xs:element ref="city"/>
+        <xs:element minOccurs="0" ref="street"/>
+        <xs:element ref="building_number"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.location"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.location">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:attributeGroup>
+  <xs:element name="country" type="xs:string"/>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="street" type="xs:string"/>
+  <xs:element name="building_number" type="xs:string"/>
+  <xs:element name="employees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="employee"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="emp_name"/>
+        <xs:element ref="salary"/>
+        <xs:element minOccurs="0" ref="age"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.employee"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.employee">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute name="position" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Продавач"/>
+          <xs:enumeration value="Готвач"/>
+          <xs:enumeration value="Чистач"/>
+          <xs:enumeration value="Управител"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="sex" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Мъж"/>
+          <xs:enumeration value="Жена"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="emp_name" type="xs:string"/>
+  <xs:element name="salary" type="xs:string"/>
+  <xs:element name="age" type="xs:string"/>
+</xs:schema>

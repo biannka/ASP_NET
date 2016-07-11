@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="1">
+    <name>Най-яката къща за кафе бадка!</name>
+    <working_time>от 7:00 - до 20:00</working_time>
+    <products>
+        <product id="п200">
+            <price>5.00</price>
+            <product_name>Кроасани</product_name>
+            <description>
+			Ръчно приготвени по оригинални рецепти на, пресни и сочни всеки ден, 
+                    за възможно най-добрия старт на деня в комбинация с хубаво кафе!
+			</description>
+            <food id="X201" food_type="Солено">
+              <food_name>Кроасан с плодове</food_name>
+            </food>
+            <food id="X202" food_type="Солено">
+              <food_name>Кроасан със сирене</food_name>
+            </food>
+			<food id="X203" food_type="Солено">
+              <food_name>Кроасан с шунка и кашкавал</food_name>
+            </food>
+			<food id="X204" food_type="Солено">
+              <food_name>Кроасан с шунка и топено сирене</food_name>
+            </food>
+            <food id="X205" food_type="Солено">
+              <food_name>Кроасан с шоколад</food_name>
+            </food>
+            <food id="X206" food_type="Солено">
+              <food_name>Кроасан със сладко</food_name>
+            </food>
+            <food id="X207" food_type="Солено">
+              <food_name>Кроасан с масло</food_name>
+            </food>
+        </product>
+        <product id="п201">
+            <price>2лв</price>
+            <product_name>Kафе</product_name>
+            <description>най-яките кафета! Традиционни</description>
+          <coffee id="к190" drink_type ="Гореща" supplement_type = "Сметана">
+              <coffee_name>Виенско кафе</coffee_name>
+              <coffee_type>Cararro</coffee_type>
+              <supplement_price>0лв</supplement_price>
+            </coffee>
+          <coffee id="к191" drink_type ="Гореща" supplement_type = "Канела">
+              <coffee_name>Капучно с канела</coffee_name>
+              <coffee_type>Cararro</coffee_type>
+              <supplement_price>0лв</supplement_price>
+            </coffee>
+        </product>
+    </products>
+    <contacts id="c20">
+        <location id="l20">
+            <country>България</country>
+            <city>София</city>
+            <street>Граф Игнатиев</street>
+            <building_number>7864</building_number>
+        </location>
+        <phone>0887347690</phone>
+        <website>www.кафетата.bg</website>
+        <e-mail>best_coffee@coffee.com</e-mail>
+    </contacts>
+    <employees>
+        <employee id="e200" position="Продавач" sex="Мъж">
+            <emp_name>Димитър</emp_name>
+            <salary>900</salary>
+            <age>23</age>
+        </employee>
+        <employee id="e201" position="Продавач" sex="Мъж">
+            <emp_name>Кайла</emp_name>
+            <salary>900</salary>
+            <age>67</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

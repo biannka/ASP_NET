@@ -1,0 +1,65 @@
+﻿<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="0">
+  <name>Фреш Кафе</name>
+  <working_time>От 6 до 16 часа</working_time>
+  <products>
+    <product id="П1">
+      <price>5лв</price>
+      <product_name>Млечна закуска</product_name>
+      <coffee id="К00" supplement_type="Без" drink_type="Студена">
+        <coffee_name>Лате</coffee_name>
+        <coffee_type>Грийн Метх</coffee_type>
+      </coffee>
+      <food id="Хр01" food_type="Сладко">
+        <food_name>Мюсли с пресни плодове</food_name>
+      </food>
+    </product>
+    <product id="П2">
+      <price>6лв.</price>
+      <product_name>Пълнозърнеста закуска</product_name>
+      <coffee id="К20" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Грийн Лип</coffee_type>
+      </coffee>
+      <food id="Х21" food_type="Сладко">
+        <food_name>Пълнозърнеста бисквита</food_name>
+      </food>
+    </product>
+    <product id="П3">
+      <price>6</price>
+      <product_name>Голяма закуска</product_name>
+      <coffee id="К30" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Дълго кафе с портокал</coffee_name>
+        <coffee_type>Грийн Мих</coffee_type>
+      </coffee>
+      <food id="Х31" food_type="Солено">
+        <food_name>Сандвич с пълнозурнест хляб</food_name>
+      </food>
+    </product>
+  </products>
+  <gift id="Г0" gift_reason="Покупка" gift_type="Отстъпка">
+    <gift_name>Бонус</gift_name>
+  </gift>
+  <contacts id="С0">
+    <location id="Л0">
+      <country>Сърбия</country>
+      <city>Белград</city>
+      <street>Белида</street>
+      <building_number>8989</building_number>
+    </location>
+    <phone>0889 679 212</phone>
+    <website>Фреш - кафе.ком</website>
+    <e-mail>Фреш@кафе.ком</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E0" position="Продавач" sex="Жена">
+      <emp_name>Малина</emp_name>
+      <salary>600</salary>
+      <age>29</age>
+    </employee>
+    <employee id="E1" position="Управител" sex="Жена">
+      <emp_name>Марияна</emp_name>
+      <salary>100</salary>
+    </employee>
+  </employees>
+</CoffeeHouse>

@@ -1,0 +1,77 @@
+﻿<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="20">
+  <name>Сити</name>
+  <working_time>от 6 до 20</working_time>
+  <products>
+    <product id="П200">
+      <price>6лв</price>
+      <product_name>Фреш меню</product_name>
+      <coffee id="C2000" supplement_type="Без" drink_type="Студена">
+        <coffee_name>Фрапе</coffee_name>
+        <coffee_type>Сити Класик</coffee_type>
+      </coffee>
+      <food id="Х2001" food_type="Сладко">
+        <food_name>Плодова салата</food_name>
+      </food>
+    </product>
+    <product id="П201">
+      <price>6лв</price>
+      <product_name>Сладко меню</product_name>
+      <coffee id="C2010" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Късо или дълго кафе</coffee_name>
+        <coffee_type>Сити Класик</coffee_type>
+      </coffee>
+      <food id="Х2011" food_type="Сладко">
+        <food_name>Кексче</food_name>
+      </food>
+    </product>
+    <product id="П202">
+      <price>2лв</price>
+      <product_name>Кафе</product_name>
+      <coffee id="К2020" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>класическо кафе</coffee_name>
+        <coffee_type>Сити Класик</coffee_type>
+      </coffee>
+      <coffee id="К2021" supplement_type="Мляко" drink_type="Гореща">
+        <coffee_name>Американо</coffee_name>
+        <coffee_type>Сити Амер</coffee_type>
+        <supplement_price>1лв</supplement_price>
+      </coffee>
+      <coffee id="К2022" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Капучино</coffee_name>
+        <coffee_type>Сити Амер</coffee_type>
+      </coffee>
+      <coffee id="К2023" supplement_type="Без" drink_type="Студена">
+        <coffee_name>Лате</coffee_name>
+        <coffee_type>Сити Амер</coffee_type>
+      </coffee>
+    </product>
+  </products>
+  <gift id="Г20" gift_reason="Покупка" gift_type="Отстъпка">
+    <gift_name>Заповядайте отново</gift_name>
+  </gift>
+  <contacts id="С20">
+    <location id="Л20">
+      <country>България</country>
+      <city>Пловдив</city>
+      <building_number>7654</building_number>
+    </location>
+    <phone>08846364</phone>
+    <website>Сити-кафе.ком</website>
+    <e-mail>Сити@кафе.ком</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E200" position="Управител" sex="Мъж">
+      <emp_name>Иван</emp_name>
+      <salary>800</salary>
+    </employee>
+    <employee id="E201" position="Продавач" sex="Жена">
+      <emp_name>Мария</emp_name>
+      <salary>700</salary>
+    </employee>
+    <employee id="E202" position="Чистач" sex="Мъж">
+      <emp_name>Терас</emp_name>
+      <salary>600</salary>
+    </employee>
+  </employees>
+</CoffeeHouse>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="1">
+    <name>Най-яката къща за кафе бадка!</name>
+    <working_time>от 7:00 - до 20:00</working_time>
+    <products>
+        <product id="п0201">
+            <price>5.00</price>
+            <product_name>Палачинки</product_name>
+            <description>
+			Че палачинките са любима закуска на малки и големи няма никакъв спор. 
+                    Сигурно на пръсти се броят хората, които не ги обичат.
+                    Със сиренце, сладко, конфитюр, шоколад, кашкавал или каквото там обичате,
+                    те са вкусни, мекички, наслада за небцето и сетивата.
+			</description>
+            <food id="X201" food_type="Солено">
+              <food_name>Палачинки с плодове</food_name>
+            </food>
+            <food id="X202" food_type="Солено">
+              <food_name>Палачинки със сирене</food_name>
+            </food>
+			<food id="X203" food_type="Солено">
+              <food_name>Палачинки с шунка и кашкавал</food_name>
+            </food>
+			<food id="X204" food_type="Солено">
+              <food_name>Палачинки с шунка и топено сирене</food_name>
+            </food>
+            <food id="X205" food_type="Солено">
+              <food_name>Палачинки с шоколад</food_name>
+            </food>
+            <food id="X206" food_type="Солено">
+              <food_name>Палачинки със сладко</food_name>
+            </food>
+        </product>
+        <product id="п1">
+            <price>2лв</price>
+            <product_name>кафе</product_name>
+            <description>най-яките кафета! Традиционни</description>
+            <coffee id="к201">
+              <coffee_name>Lavazza</coffee_name>
+              <coffee_type>Горещо</coffee_type>
+              <supplement_price>0лв</supplement_price>
+            </coffee>
+            <coffee id="к202">
+              <coffee_name>Cararro</coffee_name>
+              <coffee_type>Горещо</coffee_type>
+              <supplement_price>0лв</supplement_price>
+            </coffee>
+        </product>
+    </products>
+    <contacts id="а1.0">
+        <location id="а1.1">
+            <country>България</country>
+            <city>София</city>
+            <street>Граф Игнатиев</street>
+            <building_number>7864</building_number>
+        </location>
+        <phone>0887347690</phone>
+        <website>www.кафетата.bg</website>
+        <e-mail>best_coffee@coffee.com</e-mail>
+    </contacts>
+    <employees>
+        <employee id="с1.0" position="Продавач" sex="Мъж">
+            <emp_name>Лейла</emp_name>
+            <salary>900</salary>
+            <age>23</age>
+        </employee>
+        <employee id="с1.1" position="Продавач" sex="Мъж">
+            <emp_name>Кайла</emp_name>
+            <salary>900</salary>
+            <age>67</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

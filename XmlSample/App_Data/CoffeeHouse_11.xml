@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="11">
+    <name>Коста Кафе</name>
+    <working_time>от 10 до 10</working_time>
+    <products>
+        <product id="П110">
+            <price>5лв.</price>
+            <product_name>Чаша</product_name>
+        </product>
+        <product id="П111">
+            <price>10лв.</price>
+            <product_name>Уред за френско кафе</product_name>
+        </product>
+    </products>
+    <contacts id="С11">
+        <location id="Л11">
+            <city>София</city>
+            <building_number>4</building_number>
+        </location>
+        <phone>89557</phone>
+        <website>Коста.ком</website>
+        <e-mail>Коста@кафе</e-mail>
+    </contacts>
+    <employees>
+        <employee id="е110" position="Готвач" sex="Жена">
+            <emp_name>Михаела</emp_name>
+            <salary>700</salary>
+        </employee>
+        <employee id="e112" position="Продавач" sex="Мъж">
+            <emp_name>Пламен</emp_name>
+            <salary>700</salary>
+        </employee>
+    </employees>
+</CoffeeHouse>

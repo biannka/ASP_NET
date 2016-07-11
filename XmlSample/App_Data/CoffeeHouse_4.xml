@@ -1,0 +1,54 @@
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id = "4">
+    <name>Черни Зърна</name>
+    <working_time>От 06.00 до 20.00. Всеки ден</working_time>
+    <products>
+        <product id="П400">
+            <price>100лв.</price>
+            <product_name>Кафемашина</product_name>
+            <description>
+                За да се уверите, че винаги ще получите същото високо качество , с чудесен вкус, независимо дали сте у дома или навън. 
+                Уверете се в лекотата на използване на Tassimo машината.
+                Той върши цялата техническа , сложна работа , така че всичко, което трябва да направите е да натиснете един бутон!
+                Можете да получавате всеки ден у дома перфектната чаша кафе!
+            </description>
+        </product>
+        <product id="П401">
+            <price>30лв</price>
+            <product_name>Машина за фрапе</product_name>
+        </product>
+        <product id="П402">
+            <price>10лв.</price>
+            <product_name>Френска преса</product_name>
+            <description>
+                Френската преса е един от най-старите и удобни начини за приготвяне на кафе.
+                С нея се работи лесно, не е скъпа и прави наистина добро кафе. 
+                Още ли търсите начин да приготвите кафе със силен аромат, плътно тяло и наситен вкус? 
+                Току що го открихте – незаменимата френска преса.
+            </description>
+        </product>
+    </products>
+    <contacts id="С400">
+        <location id="Л400">
+            <country>България</country>
+            <city>София</city>
+            <street>Пиротска</street>
+            <building_number>С598</building_number>
+        </location>
+        <phone>0888 674 8085</phone>
+        <website>ЧерниЗърна.ком</website>
+        <e-mail>ЧерниЗърна@кафе.ком</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е40" position="Продавач" sex="Жена">
+            <emp_name>Стела</emp_name>
+            <salary>1000</salary>
+            <age>30</age>
+        </employee>
+        <employee id="Е41" position="Продавач" sex="Жена">
+            <emp_name>Михаела</emp_name>
+            <salary>1000</salary>
+            <age>30</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="15">
+  <name>Коста</name>
+  <working_time>от 8 до 22</working_time>
+  <products>
+    <product id="П150">
+      <price>4лв.</price>
+      <product_name>Кафета</product_name>
+      <coffee id="К150" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Късо кафе</coffee_name>
+        <coffee_type>Коста</coffee_type>
+      </coffee>
+      <coffee id="К151" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Коста</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="К152" supplement_type="Сметана" drink_type="Гореща">
+        <coffee_name>Виенско кафе</coffee_name>
+        <coffee_type>Коста</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+      <coffee id="К153" supplement_type="Канела" drink_type="Гореща">
+        <coffee_name>Канелено кафе</coffee_name>
+        <coffee_type>Коста</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+      <coffee id="К154" supplement_type="Мляко" drink_type="Студена">
+        <coffee_name>Бананово кафе</coffee_name>
+        <coffee_type>Коста</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+    </product>
+    <product id="П151">
+      <price>6лв.</price>
+      <product_name>Кексчета</product_name>
+      <food id="Х150" food_type="Солено">
+        <food_name>Кексче с шоколад</food_name>
+      </food>
+      <food id="Х151" food_type="Солено">
+        <food_name>Кексче с малина</food_name>
+      </food>
+      <food id="Х152" food_type="Сладко">
+        <food_name>Кексче с ягода</food_name>
+      </food>
+    </product>
+  </products>
+  <contacts id="Л2">
+    <location id="C2">
+      <country>България</country>
+      <city>Шумен</city>
+      <street>Хевд</street>
+      <building_number>3424</building_number>
+    </location>
+    <phone>087654747</phone>
+    <website>Стар-бъкс.ком</website>
+    <e-mail>Стар@бъксс</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E150" position="Продавач" sex="Мъж">
+      <emp_name>Слави</emp_name>
+      <salary>800</salary>
+      <age>30</age>
+    </employee>
+    <employee id="E151" position="Готвач" sex="Жена">
+      <emp_name>Пламен</emp_name>
+      <salary>1000</salary>
+      <age>34</age>
+    </employee>
+  </employees>
+</CoffeeHouse>

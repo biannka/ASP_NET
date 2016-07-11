@@ -1,0 +1,73 @@
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd"  id = "5">
+    <name>Всичко За Кафето</name>
+    <working_time>От 06.00 до 20.00. Всеки ден</working_time>
+    <products>
+        <product id="П500">
+            <price>5 лева</price>
+            <product_name>Чаша</product_name>
+            <description>
+                Голяма и удобна. Ще запази топлината на кафето!
+            </description>
+            <image>cup1.jpg</image>
+        </product>
+        <product id="П501">
+            <price>7 лева</price>
+            <product_name>Термус</product_name>
+            <description>
+                Ние всички сме много заети, но винаги има време за кафе! 
+                Една кафе напитка е нещо, на което може да се насладите навсякъде. 
+                Термусът е най-подходящ продукт, който ще я запази гореща и освежаваща докато пътувате.
+            </description>
+            <image>cup2.jpg</image>
+        </product>
+    </products>
+    <contacts id="С05">
+        <location id="Л05">
+            <country>България</country>
+            <city>София</city>
+            <street>Витошка</street>
+            <building_number>С59</building_number>
+        </location>
+        <phone>0888 567 896</phone>
+        <website>CoffeeHouse.com</website>
+        <e-mail>CoffeeHouse@gmail.com</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е51" position="Управител" sex="Мъж">
+            <emp_name>Петко Йорданов</emp_name>
+            <salary>1000</salary>
+            <age>26</age>
+        </employee>
+        <employee id="Е52" position="Продавач" sex="Жена">
+            <emp_name>Гергана Маринова</emp_name>
+            <salary>1000</salary>
+            <age>35</age>
+        </employee>
+        <employee id="Е53" position="Продавач" sex="Мъж">
+            <emp_name>Петър Иванов</emp_name>
+            <salary>1000</salary>
+            <age>26</age>
+        </employee>
+        <employee id="Е54" position="Продавач" sex="Жена">
+            <emp_name>Симона Владимирова</emp_name>
+            <salary>1000</salary>
+            <age>26</age>
+        </employee>
+        <employee id="Е65" position="Готвач" sex="Мъж">
+            <emp_name>Димитър Ангелов</emp_name>
+            <salary>1000</salary>
+            <age>26</age>
+        </employee>
+        <employee id="Е66" position="Готвач" sex="Мъж">
+            <emp_name>Георги Колев</emp_name>
+            <salary>1000</salary>
+            <age>26</age>
+        </employee>
+        <employee id="Е67" position="Чистач" sex="Жена">
+            <emp_name>Мария Трайкова</emp_name>
+            <salary>800</salary>
+            <age>35</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

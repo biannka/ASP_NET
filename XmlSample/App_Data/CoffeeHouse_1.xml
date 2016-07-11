@@ -1,0 +1,58 @@
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="1" >
+    <name>Всичко За Кафето</name>
+    <working_time>От 06.00 до 20.00. Всеки ден</working_time>
+    <products>
+        <product id="К01">
+            <price>2.50лв</price>
+            <product_name>Класическо кафе</product_name>
+            <description>
+                Една от най-разпространените форми, под които пием любимото ни кафеено удоволствие е еспресото. 
+                Създаването на чаша еспресо е процес, който изисква старание и внимание към детайла. Най-често разпространеният вид кафе, подходящ за еспресо е сорт Робуста.
+                Той е с по-високо съдържание на кофеин и е по-евтин в сравнение с Арабиката, заради което се използва и в повечето търговски марки кафе. 
+                Робустата оформя плътният каймак на еспресото и е по-малко чувствителна към температурата. 
+                Истината е, че еспресото направено от смес 100% зърна Арабика обаче се смята за по-качествено, тъй като вкусът му е по-фин и по-ароматен.
+            </description>
+            <coffee id="К12"  supplement_type="Без" drink_type="Гореща">
+                <coffee_name>Късо кафе</coffee_name>
+                <coffee_type>Еспресо</coffee_type>
+            </coffee>
+            <coffee id="К11"  supplement_type="Без" drink_type="Гореща">
+                <coffee_name>Дълго кафе</coffee_name>
+                <coffee_type>Еспресо</coffee_type>
+            </coffee>
+            <image>кафе.jpg</image>
+        </product>
+        <product id="П01">
+            <price>2.50лв</price>
+            <product_name>Храна</product_name>
+            <food id="Х011"  food_type="Солено">
+                <food_name>Сандвич</food_name>
+            </food>
+        </product>
+    </products>
+    <contacts id="Л1">
+        <location id="С1">
+            <country>България</country>
+            <city>Тутракан</city>
+            <building_number>6544</building_number>
+        </location>
+        <phone>0887965783</phone>
+        <website>ВсичкоЗаКафето-кафе.ком</website>
+        <e-mail>ВсичкоЗаКафето@кафе.ком</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е10" position="Управител" sex="Мъж">
+            <emp_name>Петкан</emp_name>
+            <salary>800</salary>
+        </employee>
+        <employee id="E11" position="Продавач" sex="Жена">
+            <emp_name>Силвия</emp_name>
+            <salary>700</salary>
+        </employee>
+        <employee id="E12" position="Чистач" sex="Жена">
+            <emp_name>Магдалена</emp_name>
+            <salary>920</salary>
+        </employee>
+    </employees>
+</CoffeeHouse>

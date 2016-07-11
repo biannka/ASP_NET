@@ -1,0 +1,73 @@
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd"  id= "3">
+    <name>Всичко За Кафето</name>
+    <working_time>От 06.00 до 20.00. Всеки ден</working_time>
+    <products>
+        <product id="П30">
+            <price>7.50лв</price>
+            <product_name>Сутрешна промоция</product_name>
+            <description>
+                Започнете денят си подобаващо с чаша виенско кафе и богата закуска.
+                За енергизиращ старт на деня!
+            </description>
+            <coffee id= "К300"  supplement_type="Без" drink_type="Гореща">
+                <coffee_name>Виенско кафе</coffee_name>
+                <coffee_type>Еспресо</coffee_type>
+            </coffee>
+            <food id= "Х300" food_type = "Солено">
+                <food_name>Закуски</food_name>
+            </food>
+            <image>sutrin.jpg</image>
+        </product>
+        <product id="П31">
+            <price>6.60лв</price>
+            <product_name>Лятна промоция</product_name>
+            <description>
+                Когато денят е горещ, ви предлагаме освежаваща комбинация.
+                Може да утолите жаждата си и да откриете сладко облекчение в вкусното Нескафе Фрапе в комбинация със сладолед.
+            </description>
+            <coffee id= "К310" supplement_type="Без" drink_type="Гореща">
+                <coffee_name>Фрапе</coffee_name>
+                <coffee_type>Нескафе</coffee_type>
+            </coffee>
+            <food id= "Х311" food_type = "Сладко">
+                <food_name>Сладолед</food_name>
+            </food>
+            <image>lqto.jpg</image>
+        </product>
+        <product id="П32">
+            <price>7.80лв</price>
+            <product_name>Зимна промоция</product_name>
+            <description>
+                Коледата е време да поглезиш любимите хора,
+                а защо не и да поглезиш и себе си!
+            </description>
+            <coffee id= "К320"  supplement_type="Без" drink_type="Гореща">
+                <coffee_name>Капучно с канела</coffee_name>
+                <coffee_type>Караро</coffee_type>
+            </coffee>
+            <food id= "Х321" food_type = "Сладко">
+                <food_name>Бисквити</food_name>
+            </food>
+            <image>winter.jpg</image>
+        </product>
+    </products>
+    <contacts id="С3">
+        <location id="Л3">
+            <country>България</country>
+            <city>София</city>
+            <street>Витошка</street>
+            <building_number>Т78Б</building_number>
+        </location>
+        <phone>0888 557 790</phone>
+        <website>Закафето.ком</website>
+        <e-mail>Закафето@емейл.ком</e-mail>
+    </contacts>
+    <employees>
+        <employee id="Е30" position="Управител" sex="Мъж">
+            <emp_name>Димитър Ангелов</emp_name>
+            <salary>1500</salary>
+            <age>38</age>
+        </employee>
+    </employees>
+</CoffeeHouse>

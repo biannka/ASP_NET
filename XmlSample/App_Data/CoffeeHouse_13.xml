@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="13">
+  <name>Све</name>
+  <working_time>от 6 до 20</working_time>
+  <products>
+    <product id="П130">
+      <price>4лв.</price>
+      <product_name>Натурални Кафета</product_name>
+      <coffee id="К130" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Късо кафе</coffee_name>
+        <coffee_type>Све</coffee_type>
+      </coffee>
+      <coffee id="К131" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Безкофеиново</coffee_name>
+        <coffee_type>Све</coffee_type>
+      </coffee>
+      <coffee id="К132" supplement_type="Без" drink_type="Гореща">
+        <coffee_name>Дълго кафе</coffee_name>
+        <coffee_type>Све</coffee_type>
+      </coffee>
+    </product>
+    <product id="П131">
+      <price>4лв.</price>
+      <product_name>Кафета с аромати</product_name>
+      <coffee id="К133" supplement_type="Мляко" drink_type="Студена">
+        <coffee_name>Лате боровинка</coffee_name>
+        <coffee_type>Све</coffee_type>
+        <supplement_price>1</supplement_price>
+      </coffee>
+      <coffee id="К134" supplement_type="Мляко" drink_type="Гореща">
+        <coffee_name>Еспресо лешник</coffee_name>
+        <coffee_type>Све</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+      <coffee id="К135" supplement_type="Мляко" drink_type="Гореща">
+        <coffee_name>Макиато портокал</coffee_name>
+        <coffee_type>Све</coffee_type>
+        <supplement_price>1лв.</supplement_price>
+      </coffee>
+    </product>
+  </products>
+  <contacts id="Л13">
+    <location id="C13">
+      <country>България</country>
+      <city>Златни пясъци</city>
+      <building_number>443</building_number>
+    </location>
+    <phone>08765432</phone>
+    <website>Све.ком</website>
+    <e-mail>Све@кафе</e-mail>
+  </contacts>
+  <employees>
+    <employee id="E130" position="Продавач" sex="Мъж">
+      <emp_name>Михаил</emp_name>
+      <salary>800</salary>
+      <age>30</age>
+    </employee>
+    <employee id="E131" position="Готвач" sex="Жена">
+      <emp_name>Петър</emp_name>
+      <salary>1000</salary>
+      <age>34</age>
+    </employee>
+  </employees>
+</CoffeeHouse>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="file:/C:/Users/Bibi/Desktop/ASP/asp-proekt-novo-novo/XmlSample/App_Data/coffeeHouse.xsd" id="2">
+  <name>Лед кафе</name>
+  <working_time>от 8 до 22</working_time>
+  <products>
+    <product id="Pвс4е3">
+      <price>4</price>
+      <product_name>Студени кафета</product_name>
+      <coffee id="Cвс4е30" supplement_type="Без" drink_type="Студена">
+        <coffee_name>Лате малина</coffee_name>
+        <coffee_type>Нескафе</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="Cвс4е31" supplement_type="Без" drink_type="Студена">
+        <coffee_name>Лате ягода</coffee_name>
+        <coffee_type>Нескафе</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+      <coffee id="Cвс4е32" supplement_type="Захар" drink_type="Студена">
+        <coffee_name>Фрапе</coffee_name>
+        <coffee_type>Нескафе</coffee_type>
+        <supplement_price>0</supplement_price>
+      </coffee>
+    </product>
+    <product id="P3ежс4">
+      <price>6</price>
+      <product_name>Сладолед</product_name>
+      <food id="F3ежс40" food_type="Сладко">
+        <food_name>Сладолед горски плод на клечка</food_name>
+      </food>
+      <food id="F3ежс41" food_type="Сладко">
+        <food_name>Шоколадова фантазия</food_name>
+      </food>
+      <food id="F3ежс42" food_type="Сладко">
+        <food_name>Сладолед ванилия на клечка</food_name>
+      </food>
+    </product>
+  </products>
+  <contacts id="L2">
+    <location id="C2">
+      <country>България</country>
+      <city>Варна</city>
+      <street>Хеог</street>
+      <building_number>3424</building_number>
+    </location>
+    <phone>08765432</phone>
+    <website>Лед-кафе.ком</website>
+    <e-mail>Лед@кафе</e-mail>
+  </contacts>
+  <employees>
+    <employee id="Ecs" position="Продавач" sex="Мъж">
+      <emp_name>Сашо</emp_name>
+      <salary>600</salary>
+      <age>30</age>
+    </employee>
+    <employee id="E1" position="Продавач" sex="Жена">
+      <emp_name>Мария</emp_name>
+      <salary>3</salary>
+      <age>sdc</age>
+    </employee>
+  </employees>
+</CoffeeHouse>
